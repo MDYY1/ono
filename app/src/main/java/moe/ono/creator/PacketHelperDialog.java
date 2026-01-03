@@ -411,7 +411,7 @@ public class PacketHelperDialog extends BottomPopupView {
                                 "          \"7\": {},\n" +
                                 "          \"8\": {\n" +
                                 "            \"1\": 10001,\n" +
-                                "            \"4\": \"@mdyy\",\n" +
+                                "            \"4\": "+element.getAsJsonArray().get(1).getAsString()+",\n" +
                                 "            \"5\": 2\n" +
                                 "          }\n" +
                                 "        },\n" +
@@ -420,7 +420,7 @@ public class PacketHelperDialog extends BottomPopupView {
                                 "          \"2\": {},\n" +
                                 "          \"3\": {},\n" +
                                 "          \"4\": "+System.currentTimeMillis()+",\n" +
-                                "          \"5\": "+ThreadLocalRandom.current().nextInt(0, 100000)+",\n" +
+                                "          \"5\": "+"0"+",\n" +
                                 "          \"6\": "+System.currentTimeMillis()+",\n" +
                                 "          \"7\": 1,\n" +
                                 "          \"8\": 0,\n" +
@@ -435,7 +435,7 @@ public class PacketHelperDialog extends BottomPopupView {
                                 "        },\n" +
                                 "        \"3\": {\n" +
                                 "          \"1\": {\n" +
-                                "            \"2\": " + element.getAsJsonArray().get(1).getAsString() +
+                                "            \"2\": " + element.getAsJsonArray().get(2).getAsString() +
                                 "          }\n" +
                                 "        }\n" +
                                 "      },\n" ;
